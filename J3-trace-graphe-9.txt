@@ -1,0 +1,50 @@
+
+--- Matrice d'Adjacence --- 
+0 1 1 0 
+0 0 1 1 
+0 1 0 1 
+0 0 0 0 
+
+--- Matrice d'Adjacence avec les valeurs --- 
+0 1 -5 0 
+0 0 -3 2 
+0 -1 0 2 
+0 0 0 0 
+
+--- Algorithme de Floyd-Warshall --- 
+Matrice Distance initiale : 
+0 1 -5 inf 
+inf 0 -3 2 
+inf -1 0 2 
+inf inf inf 0 
+
+Matrice Chemin initiale : 
+0 0 0 -1 
+-1 1 1 1 
+-1 2 2 2 
+-1 -1 -1 3 
+
+
+======= Iteration numero 1  =======
+Matrice Distance : 
+0 1 -5 inf 
+inf 0 -3 2 
+inf -1 0 2 
+inf inf inf 0 
+
+Matrice Chemin : 
+0 0 0 -1 
+-1 1 1 1 
+-1 2 2 2 
+-1 -1 -1 3 
+
+======= Iteration numero 2  =======
+Matrice Distance : 
+0 1 -5 3 
+inf 0 -3 2 
+inf -1 -4 2 
+inf inf inf 0 
+
+Presence d'un circuit absorbant.
+
+--- Fin de l'etape Algorithme de Floyd-Warshall--- 
